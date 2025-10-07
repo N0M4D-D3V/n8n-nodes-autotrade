@@ -1,0 +1,85 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -360,
+        -280
+      ],
+      "id": "3043fdca-3375-4e71-b8ee-f9390b4f3ff5",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "amount": 2
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        -220,
+        -280
+      ],
+      "id": "47ef4fdf-20fa-46c5-84f7-0ea2a2193351",
+      "name": "Wait",
+      "webhookId": "17775ac5-043b-44ea-a399-e67e12797bc5"
+    },
+    {
+      "parameters": {
+        "robotName": "my_robot"
+      },
+      "type": "CUSTOM.autoTrade",
+      "typeVersion": 1,
+      "position": [
+        -80,
+        -280
+      ],
+      "id": "23bbfc91-2310-4d4f-b8bc-65da5460380a",
+      "name": "AutoTrade",
+      "credentials": {
+        "autotradeApi": {
+          "id": "ekXlTBFLumeexnIo",
+          "name": "AutoTrade Credentials account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "AutoTrade",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "ed6a8778-9028-49e0-9925-5d67ec4d488f",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "e64b4e7599cbf587cdbed33a34d773908c9b907da5a69597f519639082f02427"
+  },
+  "id": "sTBOQQYVAwOjcBja",
+  "tags": []
+}
