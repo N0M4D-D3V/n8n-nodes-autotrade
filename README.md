@@ -37,7 +37,9 @@ Runs a recorded automation.
 
 **Output**
 
+```js
 { "status": "ok" }
+```
 
 ### Kill
 
@@ -45,7 +47,9 @@ Gracefully shuts AutoTrade down.
 
 **Output**
 
+```js
 { "status": "ok" }
+```
 
 ## Credentials
 
