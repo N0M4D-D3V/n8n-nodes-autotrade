@@ -2,20 +2,19 @@
 
 Community node for [n8n](https://n8n.io/). Control [AutoTrade Pro](https://autotrade-pro.com) from your n8n workflows: trigger recorded robots and manage the desktop automation runtime.
 
-[Installation](#installation)
-[Operations](#operations)  
-[Credentials](#credentials)
-[Usage](#usage)
-[Examples](#examples)
-[Compatibility](#compatibility)
-[Support](#support)
-[Security & Notes](#security--notes)
-[License](#license)
-[Resources](#resources)
+1. [Installation](#installation)
+2. [Operations](#operations)
+3. [Credentials](#credentials)
+4. [Usage](#usage)
+5. [Examples](#examples)
+6. [Compatibility](#compatibility)
+7. [Support](#support)
+8. [Security & Notes](#security--notes)
+9. [Resources](#resources)
 
 ## Installation
 
-Follow n8n’s guide to install community nodes. [Docs →](https://docs.n8n.io/integrations/community-nodes/installation/)
+Follow [n8n’s guide](https://docs.n8n.io/integrations/community-nodes/installation/) to install community nodes.
 
 **AutoTrade Pro setup**
 
@@ -23,7 +22,7 @@ Follow n8n’s guide to install community nodes. [Docs →](https://docs.n8n.io/
 2. Activate a plan and sign in.
 3. Run the `.exe` and stay signed in while using this node.
 
-> Note: macOS/Linux builds are “soon”.
+> Note: macOS/Linux builds are soon.
 
 ## Operations
 
@@ -54,7 +53,7 @@ AutoTrade provides up to 10 tokens for authenticating external APIs. You create 
 
 How to create a token:
 
-1. Open AutoTrade → **Settings** → **HTTP Connections**.
+1. Open AutoTrade → **Settings → HTTP Connections**.
 2. Click **+** to generate a token.
 3. Copy the token and paste it into the **AutoTrade** credential in n8n.
 
@@ -72,8 +71,8 @@ AutoTrade Pro will generate and activate a token. Copy it and paste it into your
 
 ## Examples
 
-- [examples/run-robot.json](examples/run-robot.json) — minimal webhook → run robot
-- [examples/kill.json](examples/kill.json) — turn autotrade off
+- [examples/run-robot.json](https://github.com/N0M4D-D3V/n8n-nodes-autotrade/examples/run-robot.json) — minimal webhook → run robot
+- [examples/kill.json](https://github.com/N0M4D-D3V/n8n-nodes-autotrade/examples/kill.json) — turn autotrade off
 
 > Import in n8n: **Menu → Import from File**.
 
@@ -86,18 +85,16 @@ AutoTrade Pro will generate and activate a token. Copy it and paste it into your
 
 - Issues & feature requests: **GitHub Issues** (this repo)
 - Docs & articles: https://autotrade-pro.com/blog
+- Support Team: support@autotrade-pro.com
 
 ## Security & Notes
 
 - This node controls local desktop automation. Ensure n8n and AutoTrade run on a trusted machine.
 - Trading involves risk. Test in paper/demo environments first.
 
-## License
-
-**MIT**
-
 ## Resources
 
+- [MIT License](https://github.com/N0M4D-D3V/n8n-nodes-autotrade/LICENSE)
 - [For new n8n users](https://docs.n8n.io/try-it-out/)
 - [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
 - [Autotrade articles and docs](https://autotrade-pro.com/blog)
